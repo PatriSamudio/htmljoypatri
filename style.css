@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(251, 240, 255);
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gif {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    /* Para asegurarse de que la imagen cubra el contenedor */
+    margin-bottom: -10px;
+    margin-top: -10px;
+    /* Espaciado entre las imágenes y los botones */
+}
+
+button {
+    display: block;
+    margin-top: -100px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    text-align: center;
+
+}
+
+#gif5 {
+    margin-bottom: -30px;
+}
+
+#gif6 {
+    margin-bottom: -30px;
+    margin-top: -30px;
+}
+
+#gif7 {
+    margin-bottom: -30px;
+    margin-top: -30px;
+}
+
+#gif8 {
+    margin-bottom: -30px;
+}
+
+a {
+    font-size: 20px;
+    color: transparent;
+}

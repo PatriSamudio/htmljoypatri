@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background-image: url(./src/fondo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .number-container {
+            display: grid;
+            justify-items: center;
+            margin-top: 20px;
+
+        }
+
+        .number {
+            display: block;
+            justify-content: center;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #9334db;
+            color: #fff;
+            border-radius: 5px;
+            user-select: none;
+            margin: 10px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        h3 {
+            font-size: 14px;
+            color: rgb(40, 39, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="number-container">
+        <h3>~ Puedes hacer un bizum a cualquiera de nuestros números</h3>
+        <div class="number" onclick="copyToClipboard('611499620')">611499620</div>
+        <div class="number" onclick="copyToClipboard('611102987')">611102987</div>
+
+        <h3>~ O si quieres hacer una transferencia a nuestra cuenta</h3>
+        <div class="number" onclick="copyToClipboard('ES6600494523442310023861')">ES6600494523442310023861</div>
+
+    </div>
+    <p>Haz click para copiar el número</p>
+
+    <script>
+        function copyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Número copiado: ' + text);
+        }
+    </script>
+</body>
+
+</html>
