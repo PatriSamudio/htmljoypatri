@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
       gif.classList.add("activarAnimacion");
   };
 });
+
+function playAudio() {
+  var audio = document.getElementById("miAudio");
+  audio.play();
+}
+
