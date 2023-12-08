@@ -37,6 +37,14 @@ button {
 
 }
 
+.clickmusic {
+    padding-bottom: 10vw;
+    margin-top: -80vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
 #gif5 {
     margin-bottom: -30px;
 }
@@ -55,16 +63,12 @@ button {
     margin-bottom: -30px;
 }
 
+#gifprincipal {
+    margin-bottom: -30px;
+}
+
+
 a {
     font-size: 20px;
     color: transparent;
-}
-
-.contenedorAudio {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    background-image: url(./src/fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }

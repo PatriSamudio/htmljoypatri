@@ -9,23 +9,47 @@
     <script src="./index.js"></script>
     <link rel="icon" href="./src/favicon.png" type="image/x-icon">
 </head>
+<style>
+    .contenedor {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .svg-movimiento {
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        animation: rotar 30s linear infinite;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @keyframes rotar {
+        0% {
+            transform: rotate(0deg);
+            /* Comienza sin rotación */
+        }
+
+        100% {
+            transform: rotate(360deg);
+            /* Gira 360 grados en sentido horario */
+        }
+    }
+</style>
 
 <body>
     <div class="contenedor">
-
-        <img src="./src/1.gif" alt="" class="gif" id="gif1" loading="lazy" onclick="reproducirMusica()">
-
-
-
-        <audio id="miAudio" loop>
-            <source src="./Thank you for loving me - Bon Jovi (Violin)_2JIIjn3KH-U.mp3" type="audio/mp3">
-            Tu navegador no soporta la etiqueta de audio.
-        </audio>
-
-        <!--<audio autoplay src="./Thank you for loving me - Bon Jovi (Violin)_2JIIjn3KH-U.mp3" LOOP="1">
-
-            Tu navegador no soporta la etiqueta de audio.
-        </audio>-->
+        <h1>click para empezar</h1>
+        <img src="./src/fondoletras.jpg" alt="" class="gif" id="gif1" loading="lazy">
+        <div class="svg-movimiento">
+            <img src="./src/circulo.svg" xmlns="http://www.w3.org/2000/svg">
+            </img>
+        </div>
     </div>
 </body>
 
