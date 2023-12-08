@@ -59,3 +59,12 @@ a {
     font-size: 20px;
     color: transparent;
 }
+
+.contenedorAudio {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-image: url(./src/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
