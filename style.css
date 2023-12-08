@@ -72,3 +72,34 @@ a {
     font-size: 20px;
     color: transparent;
 }
+
+.contenedor1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.svg-movimiento {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    animation: rotar 30s linear infinite;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        /* Comienza sin rotación */
+    }
+
+    100% {
+        transform: rotate(360deg);
+        /* Gira 360 grados en sentido horario */
+    }
+}
