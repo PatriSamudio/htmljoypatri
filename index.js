@@ -10,11 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function reproducirMusica() {
   var audio = document.getElementById("miAudio");
 
-  if (audio.paused) {
+ {
       audio.play();
-  } else {
-      audio.pause();
-      audio.currentTime = 0; // Reiniciar la reproducción al principio
-  }
-
+  } 
 }
